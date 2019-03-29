@@ -10,5 +10,6 @@ int main(){
      }else{
          printf("yes");
      }
+     printf("%s","test")
     return 0;
 }
