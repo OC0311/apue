@@ -7,6 +7,7 @@ int main(int argc, char *argv[]){
 
     for (i = 1 ;i<argc; i++){
         printf("%s: ",argv[i]);
+        // 如果是一个连接则返回连接的信息而不是指向的问价的信息
         if (lstat(argv[i], &buf) < 0){
             err_ret("lstat error");
             continue;
