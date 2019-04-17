@@ -16,6 +16,8 @@ int main(void){
 
     char *ptr;
     int size;
+
+    // 改变当前目录
     if (chdir("/Users/rjj/learn/apue/part_3") <0 ){
         err_sys("chdir failed!");
     }
