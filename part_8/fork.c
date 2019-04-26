@@ -13,7 +13,7 @@ int main(void){
         err_sys("write error");
     }
   
-    printf("before fork");
+    printf("before fork\n");;
     if ((pid = fork()) < 0){
         err_sys("fork error");
     }else if (pid == 0){
