@@ -1,3 +1,2 @@
-a write to stdout
-before forkpid = 68008, glob = 7, var = 89，apid=0
-before forkpid = 68007, glob = 6, var = 88，apid=68008
+output from chaild 
+output from chaild 

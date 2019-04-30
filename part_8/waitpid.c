@@ -9,10 +9,11 @@ int main(void){
         if ((pid = fork()) <0 ){
             err_sys("fork error2");
         }else if(pid > 0){
+            // 让父进程挂了
             exit(0);
         }
-
-        sleep(2);
+        // 子进程等待两秒
+        sleep(10);
         printf("second child parent pid = %ld\n",(long)getppid);
         exit(0);
     }
