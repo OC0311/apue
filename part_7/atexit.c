@@ -22,4 +22,7 @@ int main(void){
     if ((atexit(exit2) <0)){
         err_sys("call exit2 error");
     }
+
+    printf("main done");
+    return 0;
 }
