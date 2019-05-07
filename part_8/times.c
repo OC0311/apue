@@ -23,6 +23,9 @@ void pr_exit(int status){
     
 }
 
+
+// 执行：./a.out "sleep 4" "date" "ls"
+// 分别打印他们的执行实现cpu 时间等
 int main(int argc,char *argv[]){
     int i;
     setbuf(stdout, NULL);
