@@ -19,6 +19,7 @@ int main(void){
     signal(SIGALRM,my_alarm);
     for (;;){
         // 需要设置为自己用的户名
+        // 更具提供的用户名 在/etc/master，查找相关的信息
         if((ptr = getpwnam("rjj")) == NULL){
             err_sys("getpwnam error");
         }
