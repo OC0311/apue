@@ -5,8 +5,6 @@ struct foo  {
     int a, b, c, d;
 };
 
-
-
 void printfoo(const char *s , const struct foo *fp){
     printf("%s, ",s);
     printf("    struct at 0x%lx\n", (unsigned long)fp);
