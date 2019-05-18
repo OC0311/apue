@@ -11,9 +11,12 @@ void *pthread_1(void *arg){
 
     for (;;)
     {
+         // 锁是为了判断完进入到等待的期间有可能线程会被切换
+         // 另个线程可能会把条件变量改变，那么这个线程可能就会丢失变量
          pthread_mutex_lock(&mux_lock);
          while (cond == 1)
          {
+            
             pthread_cond_wait(&cond_lock, &mux_lock);
          }
         printf("进来了：%d\n", cond);
@@ -45,6 +48,9 @@ void *pthread_3(void *arg){
    
     pthread_exit((void *)0); 
 }
+
+
+// 不断的置为0和1哈哈
 
 int main(void){
     int err;
