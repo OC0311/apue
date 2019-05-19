@@ -2,6 +2,7 @@
     "files.associations": {
         "apue.h": "c",
         "dirent.h": "c",
-        "times.h": "c"
+        "times.h": "c",
+        "pthread.h": "c"
     }
 }
