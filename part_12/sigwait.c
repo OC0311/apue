@@ -24,6 +24,7 @@ void * thr_fn(void *arg){
         // ctrl+c
         case SIGINT:
             printf("\n interrupt! \n");
+            // 跳过该信号
             break;
         // ctrl+\\
         case SIGQUIT:
