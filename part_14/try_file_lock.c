@@ -58,7 +58,7 @@ int main(int argc, char *argv[]){
             err_sys("child:read_lock ssucceeded");
         }
 
-        printf("read_lock of alread-locked regioin returns %d\n", errno);
+        printf("read_lock of already-locked regioin returns %d\n", errno);
 
         if(lseek(fd, 0, SEEK_SET) == -1){
             err_sys("lseek error");

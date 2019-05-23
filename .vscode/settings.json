@@ -3,6 +3,7 @@
         "apue.h": "c",
         "dirent.h": "c",
         "times.h": "c",
-        "pthread.h": "c"
+        "pthread.h": "c",
+        "error.h": "c"
     }
 }
