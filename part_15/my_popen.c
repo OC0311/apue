@@ -115,6 +115,8 @@ int pclose(FILE *fp){
     }
 
     // 等到父进程结束
+    // 使用while 循环只是为了避免受到信号
+    // 如果受到信号只是再次调用waitpid
     while(waitpid(pid, &stat, 0) < 0){
         if (errno != EINVAL){
             return (-1);

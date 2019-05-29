@@ -67,7 +67,7 @@ int main(int argc, char* argv[]){
     for(;;){
         for (i = 0; i<NBUF; i++){
             switch (bufs[i].op)
-            {
+            
             case UNUSED:
                 if (off < sbuf.st_size){
                     bufs[i].op = READ_PENDING;
