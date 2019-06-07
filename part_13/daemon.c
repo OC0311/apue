@@ -17,7 +17,7 @@ sigset_t mask;
 
 extern int lockfile(int);
 
-void daemonize(const char *cmd){
+void daemonize1(const char *cmd){
     int i,fd0,fd1,fd2;
     pid_t pid;
     struct rlimit r1;
